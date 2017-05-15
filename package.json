@@ -10,5 +10,10 @@
   "license": "ISC",
   "devDependencies": {
     "standard": "^10.0.2"
+  },
+  "dependencies": {
+    "hex-to-hsl": "^1.0.2",
+    "imports-loader": "^0.7.1",
+    "isotope-layout": "^3.0.4"
   }
 }
