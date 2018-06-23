@@ -68,8 +68,8 @@ flags.map(x => flagsDiv.insertAdjacentHTML('beforeend', x.flagMarkup))
 // add all .flags with .flag elements to the DOM
 document.body.appendChild(flagsDiv)
 
-var elem = document.querySelector('.flags')
-var iso = new Isotope(elem, {
+let elem = document.querySelector('.flags')
+let iso = new Isotope(elem, {
   // options
   sortAscending: true,
   itemSelector: '.flag',
@@ -89,25 +89,25 @@ var iso = new Isotope(elem, {
 // iso.sortBy('country')
 
 // bind filter button click
-var filtersElem = document.querySelector('.filters-button-group')
+let filtersElem = document.querySelector('.filters-button-group')
 filtersElem.addEventListener('click', function (event) {
   // only work with buttons
   // if (!matchesSelector(event.target, 'button')) {
   //   return
   // }
-  var filterValue = event.target.getAttribute('data-filter')
+  let filterValue = event.target.getAttribute('data-filter')
   // use matching filter function
   iso.arrange({ filter: filterValue })
 })
 
 // bind sort button click
-var sortByGroup = document.querySelector('.filters-button-group')
+let sortByGroup = document.querySelector('.filters-button-group')
 sortByGroup.addEventListener('click', function (event) {
   // only button clicks
   // if ( !matchesSelector( event.target, '.button' ) ) {
     // return;
   // }
-  var sortValue = event.target.getAttribute('data-sort-by')
+  let sortValue = event.target.getAttribute('data-sort-by')
   console.log(sortValue)
   iso.arrange({ sortBy: sortValue })
 })
