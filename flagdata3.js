@@ -1,3 +1,4 @@
+// https://github.com/reimertz/flag-colors
 module.exports = [{
   'name': 'Afghanistan',
   'url': 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Afghanistan.svg/150px-Flag_of_Afghanistan.svg.png',
