@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack flagflipflag.js flagflipflag.min.js",
+    "watch": "webpack flagflipflag.js flagflipflag.min.js --watch",
+    "serve": "browser-sync start --server --files ./*.min.js ./*.html",
+    "start": "npm run build && npm run serve"
   },
   "author": "",
   "license": "ISC",
